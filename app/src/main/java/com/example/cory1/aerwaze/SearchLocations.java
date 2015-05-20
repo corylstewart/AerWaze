@@ -26,23 +26,20 @@ public class SearchLocations extends ListActivity {
 
         lv.setTextFilterEnabled(true);
 
-        final GPSTracker gps = new GPSTracker(SearchLocations.this);
-
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                Intent intent = new Intent(getApplicationContext(), WithinLocationActivity.class);
-                startActivity(intent);
+                Intent intent;
 
                 switch (position) {
                     case 0:
-                        //Intent intent = new Intent(SearchLocations.this, WithinLocationActivity.class);
-                        //startActivity(intent);
+                        intent = new Intent(SearchLocations.this, WithinLocationActivity.class);
+                        startActivity(intent);
                         break;
                     case 1:
                         // check if GPS enabled
-                        //Intent intent = new Intent(SearchLocations.this, NearbyLocationsActivity.class);
-                        //startActivity(intent);
+                        intent = new Intent(SearchLocations.this, NearbyLocationsActivity.class);
+                        startActivity(intent);
                         break;
                 }
 

@@ -41,6 +41,10 @@
             android:name=".NearbyLocationsActivity"
             android:label="@string/title_activity_nearby_locations" >
         </activity>
+        <activity
+            android:name=".ShowRegulation"
+            android:label="@string/title_activity_show_regulation" >
+        </activity>
     </application>
 
 </manifest>

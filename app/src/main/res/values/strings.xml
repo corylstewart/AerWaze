@@ -24,5 +24,6 @@
     <string name="title_activity_show_within_location">ShowWithinLocation</string>
     <string name="title_activity_search_regulations_page">SearchRegulationsPage</string>
     <string name="title_activity_nearby_locations">NearbyLocationsActivity</string>
+    <string name="title_activity_show_regulation">ShowRegulation</string>
 
 </resources>
