@@ -45,6 +45,10 @@
             android:name=".ShowRegulation"
             android:label="@string/title_activity_show_regulation" >
         </activity>
+        <activity
+            android:name=".GetZipFromUser"
+            android:label="@string/title_activity_get_zip_from_user" >
+        </activity>
     </application>
 
 </manifest>

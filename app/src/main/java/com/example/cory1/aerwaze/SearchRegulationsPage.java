@@ -1,7 +1,11 @@
 package com.example.cory1.aerwaze;
 
+import android.app.AlertDialog;
 import android.app.ListActivity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -30,9 +34,19 @@ public class SearchRegulationsPage extends ListActivity{
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                // Display a Toast message indicting the selected item
-                Toast.makeText(getApplicationContext(),
-                        ((TextView) view).getText(), Toast.LENGTH_SHORT).show();
+                Intent intent;
+                switch (position) {
+                    case 0:
+                        intent = new Intent(SearchRegulationsPage.this, ShowRegulation.class);
+                        intent.putExtra("selection", "gps");
+                        startActivity(intent);
+                        break;
+                    case 1:
+                        intent = new Intent(SearchRegulationsPage.this, GetZipFromUser.class);
+                        startActivity(intent);
+                }
+
+
 
             }
         });
@@ -46,8 +60,7 @@ public class SearchRegulationsPage extends ListActivity{
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
+    public boolean onOptionsItemSelected(MenuItem item) {// Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();

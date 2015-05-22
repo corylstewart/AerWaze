@@ -78,7 +78,7 @@ public class NearbyLocationsActivity extends ListActivity {
         public double latitude = gps.getLatitude();
         public double longitude = gps.getLongitude();
         String complex = "complex";
-        private final String URL = "https://newprivlocdemo.appspot.com/radius?search" + complex + "&radius=5&lat=" + latitude + "&lng=" + longitude;
+        private final String URL = "https://newprivlocdemo.appspot.com/radius?search=" + complex + "&radius=5&lat=" + latitude + "&lng=" + longitude;
         AndroidHttpClient mClient = AndroidHttpClient.newInstance("");
 
         @Override

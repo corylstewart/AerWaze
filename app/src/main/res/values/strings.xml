@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">AerWaze</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="enter_zip">Please enter zip code.</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_search_locations">SearchLocations</string>
     <string name="base_url">https://newprivlocdemo.appspot.com/</string>
@@ -25,5 +25,6 @@
     <string name="title_activity_search_regulations_page">SearchRegulationsPage</string>
     <string name="title_activity_nearby_locations">NearbyLocationsActivity</string>
     <string name="title_activity_show_regulation">ShowRegulation</string>
+    <string name="title_activity_get_zip_from_user">Danielle is stinky and poopy</string>
 
 </resources>
